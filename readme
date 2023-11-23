@@ -1,0 +1,6 @@
+wonsz
+---------
+
+A simple snake clone using C, SDL2.
+
+Utlises cmake as build system, requires sdl2 binary.
