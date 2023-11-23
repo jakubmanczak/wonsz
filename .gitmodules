@@ -1,0 +1,3 @@
+[submodule "findsdl2"]
+	path = findsdl2
+	url = git@github.com:jakubmanczak/findsdl2.git
