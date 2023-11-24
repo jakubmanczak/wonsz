@@ -23,12 +23,9 @@ extern int mapw;
 extern int maph;
 extern int desiredfps;
 
-extern player p;
-extern int keyUp;
-extern int keyRight;
-extern int keyDown;
-extern int keyLeft;
+extern const Uint8 *keys;
 
+extern player p;
 extern SDL_Point apple;
 
 /// @brief initialises game variables

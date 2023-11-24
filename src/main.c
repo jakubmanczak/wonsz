@@ -38,25 +38,12 @@ void boot(){
 }
 
 void loop(){
-  keyUp = 0; keyRight = 0; keyDown = 0; keyLeft = 0;
 
   SDL_Event e;
   while(SDL_PollEvent(&e)){
     if(e.type == SDL_QUIT) quit = 1;
-    else if(e.type == SDL_KEYDOWN){
-      switch(e.key.keysym.sym){
-        case SDLK_w: case SDLK_UP:
-        keyUp = 1; break;
-        case SDLK_d: case SDLK_RIGHT:
-        keyRight = 1; break;
-        case SDLK_s: case SDLK_DOWN:
-        keyDown = 1; break;
-        case SDLK_a: case SDLK_LEFT:
-        keyLeft = 1; break;
-        case SDLK_p: p.incr = 1;
-      }
-    }
   }
+  keys = SDL_GetKeyboardState(NULL);
 
   DoGameRoutines();
 
